@@ -23,7 +23,7 @@ RUN chmod 755 /cmd.sh
 
 # copy sharing file
 COPY ./index.html /var/www/html/index.html
-COPY ./junitbook_cheatsheet.pdf /var/www/html/test.pdf
+COPY ./tmp /var/www/html/tmp
 
 EXPOSE 20022 81
 CMD ["/cmd.sh"] # docker container作成時に実行されるコマンド
